@@ -1,20 +1,29 @@
-OPTIONAL SECTION _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-You will get most of your points in this section.
-You have free-rein and can do what you want. However, the entire project’s coherence will be taken into
-consideration.
-Once more, stability will be much more important that quantity. Don’t include an option that will cause a
-problem for the rest of the program (especially for the mandatory section!).
-For the different commands and compatibility (syntax), the reference shell used will be
-tcsh.
-Here is a list of desired extras:
-• inhibitors (‘\’),
-• globbings (‘*’, ‘?’, ‘[’, ’]’),
-• job control (‘&’, fg),
-• backticks (“’),
-• parentheses (‘(’ and ‘)’),
-• variables (local and env),
-• special variables (term, precmd, cwdcmd, cwd, ignoreof for instance),
-• history (‘!’),
-• aliases,
-• line edition (multiline, dynamic rebinding, auto-completion dynamic,
-• scripting (a bit harsh though).
+Usage: ./42sh or echo "[command]" | ./42sh
+
+Description:
+
+    The 42 is a shell command interpretor
+
+    functions :
+        - pipe and redirections
+        - && and ||
+        - builtins: * cd
+                    * setenv
+                    * unsetenv
+                    * alias
+                    * echo
+                    * env
+                    * exit
+                    * env_loc
+                    * foreach
+                    * history
+                    * repeat
+                    * where
+                    * which
+        - globbings
+        - parsing using binary tree
+        - signal handler
+        - var interpretor
+        - local variable handler
+
+use make to compile the project.
